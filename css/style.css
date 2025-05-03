@@ -6,3 +6,7 @@ a{
     color: black;
     text-decoration: none;
 }
+p{
+    width: 40%;
+    border: #8999d7d1 solid 2px;
+}

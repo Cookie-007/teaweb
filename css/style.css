@@ -20,20 +20,21 @@ p{
 .peivewactive {
     color: turquoise;
 }
-#foolimg{
-    width: 100%;
+#banner{
+    width: 95%;
+    margin: 10px auto;
     height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
 }
-#foolimg img{
+#banner img{
     width: 100%;
     
 }
 #Culture{
     padding:5rem  15%;
-    height: 50rem;
+    height: 40rem;
     background-color:#85b974 ;
 }
 #Culture h1{

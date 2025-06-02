@@ -1,64 +1,88 @@
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
-p{
-    /* width: 40%; */
-    border: #8999d7d1 solid 2px;
-}
-#peivew span {
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    margin: .5rem 1rem;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    top: -3rem;
+p {
+  /* width: 40%; */
+  border: #8999d7d1 solid 2px;
 }
 
-.peivewactive {
-    color: turquoise;
+#preview {
+  float: right;
+  position: absolute;
+  bottom: 50px;
+  right: 8rem;
 }
-#banner{
-    width: 95%;
-    margin: 10px auto;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+
+#preview .preview-active {
+  border: solid white 1.5px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
 }
-#banner img{
-    width: 100%;
-    
+
+#banner img {
+  transition: opacity 0.5s ease;
+  width: 100%;
+  /* height: 50rem; */
 }
-#Culture{
-    padding:5rem  15%;
-    height: 40rem;
-    background-color:#85b974 ;
+#banner > div {
+  height: 45rem;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-#Culture h1{
-    color: aliceblue;
-    font-size: 25px;
+#preview div {
+  width: 15px;
+  height: 15px;
+  background-color: aliceblue;
+  float: left;
+  margin: 0 5px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
 }
-#Culture h2{
-    color: #d8dfbb;
-    font-size: 15px;
+
+#Culture {
+  color: rgb(139, 224, 160);
+  padding: 5rem 15%;
+  height: 40rem;
+  background: url(../img/bac74699e443242f53568639e031507.jpg) no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
 }
-#Culture h3{
-    color: #f3f7e7;
-    font-size: 40px;
+
+#Culture img {
+    width: 30%;
+    /* float: left; */
+    border-radius: 30px;
+    margin: 5rem;
 }
-#Culture h4{
-    color: #def38b;
-    font-size: 20px;
+#Culture img:last-child{
+    /* float: right; */
+    position: absolute;
+    right: 2rem;
+    bottom: 4rem;
 }
-#Culture div img{
-    max-width: 100%;
+#Culture img:first-child {
+  position: absolute;
+  left: 2rem;
+  top: 4rem;
 }
-#Culture div{
-    height: 25rem;
+#Culture div {
+  /* height: 25rem;
     width: 40%;
     float: left;
     margin-left: 3rem;
+    background-color: aliceblue; */
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
